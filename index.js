@@ -124,16 +124,40 @@ proximoElementoF();
 
 // Pergunta 4 - Interruptores:
 
+// PASSO A PASSO PARA DESCOBRIR:
+
 // Ligar o primeiro interruptor e esperar alguns minutos.
 // Desligar o primeiro interruptor e ligar o segundo interruptor.
 // Entrar na sala onde estão as lâmpadas.
+
 // Aqui, vem as seguintes situações:
 
 // Se a lâmpada estiver acesa, então o segundo interruptor controla essa lâmpada.
 // Se a lâmpada estiver apagada e estiver quente, então o primeiro interruptor controla essa lâmpada.
 // Se a lâmpada estiver apagada e fria, então o terceiro interruptor controla essa lâmpada.
 
-console.log("Pergunta 4, está comentada no código")
+
+// Aqui está um código para simular essa questão:
+function descobrirInterruptores() {
+    let lampadas = [false, false, false];
+
+    function alternarInterruptor(interruptor) {
+        lampadas[interruptor] = !lampadas[interruptor];
+    }
+
+    alternarInterruptor(0); // Ligar o primeiro interruptor
+
+    alternarInterruptor(0); // Desligar o primeiro e ligar o segundo interruptor
+    alternarInterruptor(1); // Alternar o segundo interruptor
+
+    // Aqui o resultado
+    for (let i = 0; i < lampadas.length; i++) {
+        console.log(`Pergunta 4, resposta: Lâmpada ${i + 1}: ${lampadas[i] ? 'Acesa' : 'Apagada'}`);
+    }
+}
+
+// Chamando a função para descobrir os interruptores e exibindo no console
+descobrirInterruptores();
 
 
 
