@@ -54,3 +54,64 @@ function pertenceASequenciaFibonacci(numero) {
 // Aqui informamos um número 
 const numeroParaVerificar = 26;
 pertenceASequenciaFibonacci(numeroParaVerificar);
+
+
+
+
+
+
+
+// Pergunta 3 para Descubrir a lógica e completar o próximo elemento
+
+// a) 1, 3, 5, 7, ?
+function proximoElementoA() {
+    let ultimoElemento = 7;
+    let proximoElemento = ultimoElemento + 2;
+    console.log(`Pergunta 3, questão a, resposta: ${proximoElemento}`);
+
+}
+
+// b) 2, 4, 8, 16, 32, 64, ?
+function proximoElementoB() {
+    let ultimoElemento = 64;
+    let proximoElemento = ultimoElemento * 2;
+    console.log(`Pergunta 3, questão b, resposta: ${proximoElemento}`);
+}
+
+// c) 0, 1, 4, 9, 16, 25, 36, ?
+function proximoElementoC() {
+    let ultimoElemento = 36;
+    let proximoElemento = Math.pow(Math.sqrt(ultimoElemento) + 1, 2);
+    console.log(`Pergunta 3, questão c, resposta: ${proximoElemento}`);
+}
+
+// d) 4, 16, 36, 64, ?
+function proximoElementoD() {
+    let ultimoElemento = 64;
+    let raiz = Math.sqrt(ultimoElemento);
+    let proximoElemento = Math.pow(raiz + 1, 2);
+    console.log(`Pergunta 3, questão d, resposta: ${proximoElemento}`);
+}
+
+// e) 1, 1, 2, 3, 5, 8, ?
+function proximoElementoE() {
+    let ultimoElemento1 = 8;
+    let ultimoElemento2 = 5;
+    let proximoElemento = ultimoElemento1 + ultimoElemento2;
+    console.log(`Pergunta 3, questão e, resposta: ${proximoElemento}`);
+}
+
+// f) 2, 10, 12, 16, 17, 18, 19, ?
+function proximoElementoF() {
+    let ultimoElemento = 19;
+    let proximoElemento = ultimoElemento + 1;
+    console.log(`Pergunta 3, questão f, resposta: ${proximoElemento}`);
+}
+
+// Chamando as funções
+proximoElementoA();
+proximoElementoB();
+proximoElementoC();
+proximoElementoD();
+proximoElementoE();
+proximoElementoF();
