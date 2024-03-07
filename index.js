@@ -134,3 +134,25 @@ proximoElementoF();
 // Se a lâmpada estiver apagada e fria, então o terceiro interruptor controla essa lâmpada.
 
 console.log("Pergunta 4, está comentada no código")
+
+
+
+
+
+
+
+//Pergunta 5 
+
+function inverterString(original) {
+    let invertida = '';
+    for (let i = original.length - 1; i >= 0; i--) {
+        invertida += original[i];
+    }
+    return invertida;
+}
+
+const minhaString = "Quero ser o próximo estagiário!";
+const stringInvertida = inverterString(minhaString);
+
+console.log(`Pergunta 5, resposta: String Original: ${minhaString}`);
+console.log(`Pergunta 5, resposta: String Invertida: ${stringInvertida}`);
