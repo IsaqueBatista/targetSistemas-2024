@@ -115,3 +115,22 @@ proximoElementoC();
 proximoElementoD();
 proximoElementoE();
 proximoElementoF();
+
+
+
+
+
+
+
+// Pergunta 4 - Interruptores:
+
+// Ligar o primeiro interruptor e esperar alguns minutos.
+// Desligar o primeiro interruptor e ligar o segundo interruptor.
+// Entrar na sala onde estão as lâmpadas.
+// Aqui, vem as seguintes situações:
+
+// Se a lâmpada estiver acesa, então o segundo interruptor controla essa lâmpada.
+// Se a lâmpada estiver apagada e estiver quente, então o primeiro interruptor controla essa lâmpada.
+// Se a lâmpada estiver apagada e fria, então o terceiro interruptor controla essa lâmpada.
+
+console.log("Pergunta 4, está comentada no código")
